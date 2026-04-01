@@ -1,0 +1,20 @@
+{
+  "name": "game-leaderboard",
+  "version": "1.0.0",
+  "description": "Game leaderboard API with rankings, achievements, and seasons",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node tests/run.js",
+    "lint": "npx eslint src/",
+    "format": "npx prettier --write 'src/**/*.js' 'tests/**/*.js'"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0"
+  }
+}
