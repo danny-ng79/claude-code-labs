@@ -2,7 +2,7 @@
 
 **Module:** 3 — Context Engineering
 **Duration:** 15 minutes
-**Prerequisites:** `sample-project/` with CLAUDE.md from Lab 1
+**Prerequisites:** `claude-code-labs/` with CLAUDE.md from Lab 1
 
 ---
 
@@ -17,7 +17,7 @@ See how prompt precision affects Claude's ability to find bugs, and what happens
 ### Step 1: Open the project
 
 ```bash
-cd sample-project
+cd claude-code-labs
 claude
 ```
 

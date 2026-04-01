@@ -2,7 +2,7 @@
 
 **Module:** 5 — Hooks: Deterministic Control
 **Duration:** 15 minutes
-**Prerequisites:** `sample-project/` (has Prettier and tests configured)
+**Prerequisites:** `claude-code-labs/` (has Prettier and tests configured)
 
 ---
 
@@ -15,10 +15,10 @@ Set up hooks that automatically format code and run tests after every edit. Watc
 ## Step 1: Create the hook config (3 min)
 
 ```bash
-mkdir -p sample-project/.claude
+mkdir -p claude-code-labs/.claude
 ```
 
-Create `sample-project/.claude/settings.json`:
+Create `claude-code-labs/.claude/settings.json`:
 
 ```json
 {
@@ -46,7 +46,7 @@ Create `sample-project/.claude/settings.json`:
 Open a **new** Claude Code session (hooks load at startup):
 
 ```bash
-cd sample-project
+cd claude-code-labs
 claude
 ```
 

@@ -2,7 +2,7 @@
 
 **Module:** 2 — CLAUDE.md: Collaboration Contract
 **Duration:** 15 minutes
-**Prerequisites:** `sample-project/` provided in this repo
+**Prerequisites:** `claude-code-labs/` repo cloned locally
 
 ---
 
@@ -17,7 +17,7 @@ Write a CLAUDE.md from scratch, then watch Claude use it to find and fix a real 
 Delete the existing CLAUDE.md and start fresh:
 
 ```bash
-cd sample-project
+cd claude-code-labs
 rm CLAUDE.md
 claude
 ```

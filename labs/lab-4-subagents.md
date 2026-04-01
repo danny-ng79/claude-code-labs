@@ -2,7 +2,7 @@
 
 **Module:** 7 — Subagents
 **Duration:** 10 minutes
-**Prerequisites:** `sample-project/` with CLAUDE.md
+**Prerequisites:** `claude-code-labs/` with CLAUDE.md
 
 ---
 
@@ -14,7 +14,7 @@ Use a subagent to audit the entire codebase for bugs, then fix one directly. See
 
 ## Step 1: Subagent audit (5 min)
 
-Open Claude Code in `sample-project/` and ask:
+Open Claude Code in `claude-code-labs/` and ask:
 
 ```
 Use a subagent to perform a full code audit of src/.
