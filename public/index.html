@@ -3,76 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Leaderboard</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: system-ui, sans-serif; background: #0f0f1a; color: #e0e0e0; padding: 2rem; }
-    h1 { text-align: center; font-size: 2rem; margin-bottom: 2rem; color: #f5a623; }
-    table { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; }
-    th { background: #1a1a2e; padding: 0.75rem; text-align: left; color: #f5a623; }
-    td { padding: 0.75rem; border-bottom: 1px solid #2a2a3e; }
-    tr:hover { background: #1a1a2e; }
-    .rank { font-weight: bold; }
-    .rank-bronze { color: #cd7f32; }
-    .rank-silver { color: #c0c0c0; }
-    .rank-gold { color: #ffd700; }
-    .rank-platinum { color: #40e0d0; }
-    .rank-diamond { color: #b9f2ff; }
-    .rank-master { color: #ff4444; }
-    .streak { color: #ff6b35; }
-    #loading { text-align: center; color: #666; }
-  </style>
+  <title>Quiz Arena</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Game Leaderboard</h1>
-  <div id="loading">Loading...</div>
-  <table id="leaderboard" style="display:none">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Player</th>
-        <th>Rank</th>
-        <th>Points</th>
-        <th>Wins</th>
-        <th>Win Rate</th>
-        <th>Streak</th>
-      </tr>
-    </thead>
-    <tbody id="tbody"></tbody>
-  </table>
-
-  <script>
-    fetch('/api/leaderboard')
-      .then(r => r.json())
-      .then(data => {
-        document.getElementById('loading').style.display = 'none'
-        const table = document.getElementById('leaderboard')
-        const tbody = document.getElementById('tbody')
-        table.style.display = 'table'
-
-        if (data.length === 0) {
-          tbody.innerHTML = '<tr><td colspan="7" style="text-align:center">No players yet. Seed the database with: node src/utils/seed.js</td></tr>'
-          return
-        }
-
-        data.forEach(p => {
-          const rankClass = 'rank-' + p.rank.toLowerCase()
-          tbody.innerHTML += `
-            <tr>
-              <td>${p.position}</td>
-              <td>${p.displayName}</td>
-              <td class="rank ${rankClass}">${p.rank}</td>
-              <td>${p.points}</td>
-              <td>${p.wins}</td>
-              <td>${p.winRate}%</td>
-              <td class="streak">${p.streak > 0 ? '🔥' + p.streak : '-'}</td>
-            </tr>
-          `
-        })
-      })
-      .catch(err => {
-        document.getElementById('loading').textContent = 'Error loading leaderboard. Is the server running?'
-      })
-  </script>
+  <main id="app">Quiz Arena loading…</main>
+  <script src="quiz.js"></script>
 </body>
 </html>

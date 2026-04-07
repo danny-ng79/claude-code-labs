@@ -1,31 +1,23 @@
-function validateUsername(req, res, next) {
-  const { username } = req.body
-  if (!username || typeof username !== 'string') {
-    return res.status(400).json({ error: 'Username is required' })
+function validateAnswerSubmission(req, res, next) {
+  const { choiceIndex } = req.body
+  if (choiceIndex === null) {
+    return next()
   }
-  if (username.length < 3 || username.length > 20) {
-    return res.status(400).json({ error: 'Username must be 3-20 characters' })
-  }
-  if (!/^[a-zA-Z0-9_]+$/.test(username)) {
-    return res
-      .status(400)
-      .json({ error: 'Username can only contain letters, numbers, and underscores' })
+  if (!Number.isInteger(choiceIndex) || choiceIndex < 0 || choiceIndex > 3) {
+    return res.status(400).json({ error: 'choiceIndex must be an integer 0-3 or null' })
   }
   next()
 }
 
-function validateMatchResult(req, res, next) {
-  const { player1Id, player2Id, result } = req.body
-  if (!player1Id || !player2Id) {
-    return res.status(400).json({ error: 'Both player IDs are required' })
+function validateScoreSubmission(req, res, next) {
+  const { gameId, name } = req.body
+  if (!gameId || typeof gameId !== 'string') {
+    return res.status(400).json({ error: 'gameId is required' })
   }
-  if (!['player1', 'player2', 'draw'].includes(result)) {
-    return res.status(400).json({ error: 'Result must be player1, player2, or draw' })
+  if (!name || typeof name !== 'string') {
+    return res.status(400).json({ error: 'name is required' })
   }
   next()
 }
 
-// TODO: add rate limiting middleware
-// TODO: add API key authentication
-
-module.exports = { validateUsername, validateMatchResult }
+module.exports = { validateAnswerSubmission, validateScoreSubmission }

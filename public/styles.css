@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0f0f1a;
+  color: #e0e0e0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+main {
+  width: 100%;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #f5a623;
+}
+
+.card {
+  background: #1a1a2e;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.category {
+  font-size: 0.85rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.prompt {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.choice-btn {
+  display: block;
+  width: 100%;
+  padding: 0.875rem 1rem;
+  background: #2a2a3e;
+  color: #e0e0e0;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+.choice-btn:hover {
+  background: #3a3a4e;
+  border-color: #f5a623;
+}
+
+.choice-btn:focus {
+  outline: none;
+}
+
+.choice-btn:focus-visible {
+  border-color: #f5a623;
+}
+
+.choice-btn.correct {
+  background: #1a5c2a;
+  border-color: #2ecc71;
+}
+
+.choice-btn.wrong {
+  background: #5c1a1a;
+  border-color: #e74c3c;
+}
+
+.choice-btn:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
+.score-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.score-bar .score {
+  color: #f5a623;
+  font-weight: 700;
+}
+
+.score-bar .streak {
+  color: #ff6b35;
+  font-weight: 700;
+}
+
+.timer {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.timer.warning {
+  color: #e74c3c;
+}
+
+.progress-container {
+  width: 100%;
+  height: 6px;
+  background: #2a2a3e;
+  border-radius: 3px;
+  margin-bottom: 0.4rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: #f5a623;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.timer-bar-container {
+  width: 100%;
+  height: 4px;
+  background: #2a2a3e;
+  border-radius: 2px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.timer-bar {
+  height: 100%;
+  background: #2ecc71;
+  border-radius: 2px;
+  transition: width 1s linear, background 0.3s;
+}
+
+.timer-bar.warning {
+  background: #e74c3c;
+}
+
+.multiplier-badge {
+  display: inline-block;
+  background: #ff6b35;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+  animation: popIn 0.25s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.6); opacity: 0; }
+  70% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.start-btn,
+.play-again-btn,
+.submit-score-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: #f5a623;
+  color: #0f0f1a;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.start-btn:hover,
+.play-again-btn:hover,
+.submit-score-btn:hover {
+  background: #e6951e;
+}
+
+.results {
+  text-align: center;
+}
+
+.results h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f5a623;
+}
+
+.results .stat {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.results .stat strong {
+  color: #f5a623;
+}
+
+.name-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background: #2a2a3e;
+  color: #e0e0e0;
+  border: 2px solid #3a3a4e;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.name-input:focus {
+  outline: none;
+  border-color: #f5a623;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.leaderboard-table th {
+  background: #2a2a3e;
+  padding: 0.5rem;
+  text-align: left;
+  color: #f5a623;
+  font-size: 0.85rem;
+}
+
+.leaderboard-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #2a2a3e;
+  font-size: 0.9rem;
+}
+
+.leaderboard-table tr.my-score td {
+  background: #1e3a1e;
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 1rem 0.5rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+  }
+
+  .prompt {
+    font-size: 1.1rem;
+  }
+}

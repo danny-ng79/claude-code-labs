@@ -1,0 +1,802 @@
+[
+  {
+    "id": "q-001",
+    "category": "Science",
+    "prompt": "What planet is known as the Red Planet?",
+    "choices": ["Venus", "Mars", "Jupiter", "Saturn"],
+    "correctIndex": 1,
+    "explanation": "Mars appears red due to iron oxide (rust) on its surface."
+  },
+  {
+    "id": "q-002",
+    "category": "History",
+    "prompt": "In what year did the Berlin Wall fall?",
+    "choices": ["1987", "1989", "1991", "1985"],
+    "correctIndex": 1,
+    "explanation": "The Berlin Wall fell on November 9, 1989."
+  },
+  {
+    "id": "q-003",
+    "category": "Geography",
+    "prompt": "Which is the longest river in the world?",
+    "choices": ["Amazon", "Mississippi", "Nile", "Yangtze"],
+    "correctIndex": 2,
+    "explanation": "The Nile stretches about 6,650 km through northeastern Africa."
+  },
+  {
+    "id": "q-004",
+    "category": "Science",
+    "prompt": "What is the chemical symbol for gold?",
+    "choices": ["Go", "Gd", "Au", "Ag"],
+    "correctIndex": 2,
+    "explanation": "Au comes from the Latin word 'aurum'."
+  },
+  {
+    "id": "q-005",
+    "category": "Literature",
+    "prompt": "Who wrote '1984'?",
+    "choices": ["Aldous Huxley", "George Orwell", "Ray Bradbury", "Kurt Vonnegut"],
+    "correctIndex": 1,
+    "explanation": "George Orwell published 1984 in 1949."
+  },
+  {
+    "id": "q-006",
+    "category": "Math",
+    "prompt": "What is the square root of 144?",
+    "choices": ["10", "11", "12", "14"],
+    "correctIndex": 2,
+    "explanation": "12 × 12 = 144."
+  },
+  {
+    "id": "q-007",
+    "category": "Science",
+    "prompt": "What gas do plants absorb from the atmosphere?",
+    "choices": ["Oxygen", "Nitrogen", "Carbon dioxide", "Hydrogen"],
+    "correctIndex": 2,
+    "explanation": "Plants use CO2 in photosynthesis to produce glucose and oxygen."
+  },
+  {
+    "id": "q-008",
+    "category": "Geography",
+    "prompt": "What is the smallest country in the world by area?",
+    "choices": ["Monaco", "Vatican City", "San Marino", "Liechtenstein"],
+    "correctIndex": 1,
+    "explanation": "Vatican City is only about 0.44 km²."
+  },
+  {
+    "id": "q-009",
+    "category": "History",
+    "prompt": "Which ancient wonder was located in Alexandria?",
+    "choices": ["Colossus of Rhodes", "Hanging Gardens", "Great Lighthouse", "Temple of Artemis"],
+    "correctIndex": 2,
+    "explanation": "The Lighthouse of Alexandria (Pharos) was one of the Seven Wonders."
+  },
+  {
+    "id": "q-010",
+    "category": "Technology",
+    "prompt": "Who is credited with inventing the World Wide Web?",
+    "choices": ["Vint Cerf", "Tim Berners-Lee", "Steve Jobs", "Bill Gates"],
+    "correctIndex": 1,
+    "explanation": "Tim Berners-Lee proposed the WWW in 1989 at CERN."
+  },
+  {
+    "id": "q-011",
+    "category": "Science",
+    "prompt": "How many bones are in the adult human body?",
+    "choices": ["196", "206", "216", "226"],
+    "correctIndex": 1,
+    "explanation": "Adults have 206 bones; babies are born with around 270 that fuse over time."
+  },
+  {
+    "id": "q-012",
+    "category": "Geography",
+    "prompt": "Which country has the most natural lakes?",
+    "choices": ["Russia", "USA", "Canada", "Finland"],
+    "correctIndex": 2,
+    "explanation": "Canada contains roughly 60% of the world's lakes."
+  },
+  {
+    "id": "q-013",
+    "category": "History",
+    "prompt": "Who was the first person to walk on the Moon?",
+    "choices": ["Buzz Aldrin", "Yuri Gagarin", "Neil Armstrong", "John Glenn"],
+    "correctIndex": 2,
+    "explanation": "Neil Armstrong stepped onto the Moon on July 20, 1969."
+  },
+  {
+    "id": "q-014",
+    "category": "Literature",
+    "prompt": "Which Shakespeare play features the character Iago?",
+    "choices": ["Hamlet", "Macbeth", "Othello", "King Lear"],
+    "correctIndex": 2,
+    "explanation": "Iago is the villain in Shakespeare's Othello."
+  },
+  {
+    "id": "q-015",
+    "category": "Science",
+    "prompt": "What is the speed of light in a vacuum (approx.)?",
+    "choices": ["300,000 km/s", "150,000 km/s", "450,000 km/s", "3,000 km/s"],
+    "correctIndex": 0,
+    "explanation": "Light travels approximately 299,792 km/s in a vacuum."
+  },
+  {
+    "id": "q-016",
+    "category": "Math",
+    "prompt": "What is the value of π (pi) to two decimal places?",
+    "choices": ["3.12", "3.14", "3.16", "3.18"],
+    "correctIndex": 1,
+    "explanation": "Pi is approximately 3.14159…"
+  },
+  {
+    "id": "q-017",
+    "category": "Technology",
+    "prompt": "What does 'CPU' stand for?",
+    "choices": ["Central Processing Unit", "Core Power Unit", "Computer Processing Unit", "Central Program Utility"],
+    "correctIndex": 0,
+    "explanation": "CPU stands for Central Processing Unit, the primary chip in a computer."
+  },
+  {
+    "id": "q-018",
+    "category": "Geography",
+    "prompt": "On which continent is the Sahara Desert located?",
+    "choices": ["Asia", "Australia", "South America", "Africa"],
+    "correctIndex": 3,
+    "explanation": "The Sahara is the largest hot desert in the world, located in North Africa."
+  },
+  {
+    "id": "q-019",
+    "category": "History",
+    "prompt": "Which empire was ruled by Genghis Khan?",
+    "choices": ["Ottoman Empire", "Mongol Empire", "Roman Empire", "Byzantine Empire"],
+    "correctIndex": 1,
+    "explanation": "Genghis Khan founded the Mongol Empire in 1206."
+  },
+  {
+    "id": "q-020",
+    "category": "Science",
+    "prompt": "What is the most abundant gas in Earth's atmosphere?",
+    "choices": ["Oxygen", "Carbon dioxide", "Nitrogen", "Argon"],
+    "correctIndex": 2,
+    "explanation": "Nitrogen makes up about 78% of Earth's atmosphere."
+  },
+  {
+    "id": "q-021",
+    "category": "Literature",
+    "prompt": "Who wrote 'Pride and Prejudice'?",
+    "choices": ["Charlotte Brontë", "Jane Austen", "Mary Shelley", "Emily Brontë"],
+    "correctIndex": 1,
+    "explanation": "Jane Austen published Pride and Prejudice in 1813."
+  },
+  {
+    "id": "q-022",
+    "category": "Technology",
+    "prompt": "In what year was the first iPhone released?",
+    "choices": ["2005", "2006", "2007", "2008"],
+    "correctIndex": 2,
+    "explanation": "The original iPhone was unveiled by Steve Jobs on January 9, 2007."
+  },
+  {
+    "id": "q-023",
+    "category": "Math",
+    "prompt": "What is 15% of 200?",
+    "choices": ["20", "25", "30", "35"],
+    "correctIndex": 2,
+    "explanation": "15% × 200 = 30."
+  },
+  {
+    "id": "q-024",
+    "category": "Geography",
+    "prompt": "What is the capital of Australia?",
+    "choices": ["Sydney", "Melbourne", "Brisbane", "Canberra"],
+    "correctIndex": 3,
+    "explanation": "Canberra is the capital of Australia, often mistaken for Sydney."
+  },
+  {
+    "id": "q-025",
+    "category": "Science",
+    "prompt": "What organ produces insulin in the human body?",
+    "choices": ["Liver", "Kidney", "Pancreas", "Spleen"],
+    "correctIndex": 2,
+    "explanation": "The pancreas produces insulin to regulate blood sugar levels."
+  },
+  {
+    "id": "q-026",
+    "category": "History",
+    "prompt": "In which year did World War II end?",
+    "choices": ["1943", "1944", "1945", "1946"],
+    "correctIndex": 2,
+    "explanation": "World War II ended in 1945 with Germany surrendering in May and Japan in September."
+  },
+  {
+    "id": "q-027",
+    "category": "Technology",
+    "prompt": "What programming language was created by Guido van Rossum?",
+    "choices": ["Ruby", "Java", "Python", "Perl"],
+    "correctIndex": 2,
+    "explanation": "Guido van Rossum created Python and released it in 1991."
+  },
+  {
+    "id": "q-028",
+    "category": "Math",
+    "prompt": "How many sides does a heptagon have?",
+    "choices": ["5", "6", "7", "8"],
+    "correctIndex": 2,
+    "explanation": "A heptagon has 7 sides. 'Hepta' is Greek for seven."
+  },
+  {
+    "id": "q-029",
+    "category": "Science",
+    "prompt": "What is the hardest natural substance on Earth?",
+    "choices": ["Quartz", "Diamond", "Corundum", "Topaz"],
+    "correctIndex": 1,
+    "explanation": "Diamond scores 10 on the Mohs hardness scale, the highest rating."
+  },
+  {
+    "id": "q-030",
+    "category": "Geography",
+    "prompt": "Which ocean is the largest by area?",
+    "choices": ["Atlantic", "Indian", "Arctic", "Pacific"],
+    "correctIndex": 3,
+    "explanation": "The Pacific Ocean covers more than 165 million km², about 46% of Earth's water surface."
+  },
+  {
+    "id": "q-031",
+    "category": "Science",
+    "prompt": "What is the chemical formula for water?",
+    "choices": ["HO", "H2O", "H2O2", "HO2"],
+    "correctIndex": 1,
+    "explanation": "Water consists of two hydrogen atoms and one oxygen atom: H2O."
+  },
+  {
+    "id": "q-032",
+    "category": "Music",
+    "prompt": "How many strings does a standard guitar have?",
+    "choices": ["4", "5", "6", "7"],
+    "correctIndex": 2,
+    "explanation": "A standard guitar has 6 strings tuned E-A-D-G-B-e."
+  },
+  {
+    "id": "q-033",
+    "category": "History",
+    "prompt": "Who was the first President of the United States?",
+    "choices": ["John Adams", "Thomas Jefferson", "George Washington", "Benjamin Franklin"],
+    "correctIndex": 2,
+    "explanation": "George Washington served as the first U.S. President from 1789 to 1797."
+  },
+  {
+    "id": "q-034",
+    "category": "Sports",
+    "prompt": "How many players are on a standard soccer team on the field?",
+    "choices": ["9", "10", "11", "12"],
+    "correctIndex": 2,
+    "explanation": "Each soccer team fields 11 players including the goalkeeper."
+  },
+  {
+    "id": "q-035",
+    "category": "Science",
+    "prompt": "What is the powerhouse of the cell?",
+    "choices": ["Nucleus", "Ribosome", "Mitochondria", "Golgi apparatus"],
+    "correctIndex": 2,
+    "explanation": "Mitochondria produce ATP, the cell's main energy source."
+  },
+  {
+    "id": "q-036",
+    "category": "Movies",
+    "prompt": "Which movie features the iconic line 'May the Force be with you'?",
+    "choices": ["Star Trek", "Star Wars", "Interstellar", "The Matrix"],
+    "correctIndex": 1,
+    "explanation": "The phrase originates from the Star Wars franchise, first used in the 1977 film."
+  },
+  {
+    "id": "q-037",
+    "category": "Geography",
+    "prompt": "What is the capital of Japan?",
+    "choices": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"],
+    "correctIndex": 2,
+    "explanation": "Tokyo has been the capital of Japan since 1869."
+  },
+  {
+    "id": "q-038",
+    "category": "Math",
+    "prompt": "What is 12 × 12?",
+    "choices": ["132", "140", "144", "148"],
+    "correctIndex": 2,
+    "explanation": "12 × 12 = 144."
+  },
+  {
+    "id": "q-039",
+    "category": "Literature",
+    "prompt": "In 'The Hobbit', what is the name of the dragon?",
+    "choices": ["Falkor", "Smaug", "Glaurung", "Ancalagon"],
+    "correctIndex": 1,
+    "explanation": "Smaug is the dragon who guards the treasure under the Lonely Mountain."
+  },
+  {
+    "id": "q-040",
+    "category": "Science",
+    "prompt": "Which planet has the most moons?",
+    "choices": ["Jupiter", "Saturn", "Uranus", "Neptune"],
+    "correctIndex": 1,
+    "explanation": "Saturn holds the record with over 140 confirmed moons as of 2023."
+  },
+  {
+    "id": "q-041",
+    "category": "History",
+    "prompt": "In which city was the Titanic built?",
+    "choices": ["Liverpool", "London", "Belfast", "Glasgow"],
+    "correctIndex": 2,
+    "explanation": "The Titanic was built at the Harland and Wolff shipyard in Belfast, Ireland."
+  },
+  {
+    "id": "q-042",
+    "category": "Art",
+    "prompt": "Who painted the Mona Lisa?",
+    "choices": ["Michelangelo", "Raphael", "Leonardo da Vinci", "Caravaggio"],
+    "correctIndex": 2,
+    "explanation": "Leonardo da Vinci painted the Mona Lisa between approximately 1503 and 1519."
+  },
+  {
+    "id": "q-043",
+    "category": "Technology",
+    "prompt": "What does 'HTML' stand for?",
+    "choices": ["Hyper Text Markup Language", "High Tech Modern Language", "Hyper Transfer Markup Logic", "Home Tool Markup Language"],
+    "correctIndex": 0,
+    "explanation": "HTML stands for HyperText Markup Language, the backbone of web pages."
+  },
+  {
+    "id": "q-044",
+    "category": "Sports",
+    "prompt": "In which sport would you perform a 'slam dunk'?",
+    "choices": ["Volleyball", "Tennis", "Baseball", "Basketball"],
+    "correctIndex": 3,
+    "explanation": "A slam dunk is a basketball shot where the player dunks the ball through the hoop."
+  },
+  {
+    "id": "q-045",
+    "category": "Geography",
+    "prompt": "Which country has the most total area in the world?",
+    "choices": ["China", "USA", "Canada", "Russia"],
+    "correctIndex": 3,
+    "explanation": "Russia is the largest country at about 17.1 million km²."
+  },
+  {
+    "id": "q-046",
+    "category": "Science",
+    "prompt": "What force keeps planets in orbit around the Sun?",
+    "choices": ["Magnetism", "Gravity", "Electromagnetism", "Nuclear force"],
+    "correctIndex": 1,
+    "explanation": "Gravity is the attractive force between masses that keeps planets in orbit."
+  },
+  {
+    "id": "q-047",
+    "category": "Music",
+    "prompt": "Which band released the album 'Abbey Road'?",
+    "choices": ["The Rolling Stones", "The Who", "The Beatles", "Led Zeppelin"],
+    "correctIndex": 2,
+    "explanation": "The Beatles released Abbey Road in September 1969."
+  },
+  {
+    "id": "q-048",
+    "category": "History",
+    "prompt": "Who wrote the 'Communist Manifesto'?",
+    "choices": ["Vladimir Lenin", "Leon Trotsky", "Karl Marx and Friedrich Engels", "Joseph Stalin"],
+    "correctIndex": 2,
+    "explanation": "Karl Marx and Friedrich Engels published the Communist Manifesto in 1848."
+  },
+  {
+    "id": "q-049",
+    "category": "Math",
+    "prompt": "What is the sum of angles in a triangle?",
+    "choices": ["90°", "120°", "180°", "360°"],
+    "correctIndex": 2,
+    "explanation": "The interior angles of any triangle always add up to 180°."
+  },
+  {
+    "id": "q-050",
+    "category": "Movies",
+    "prompt": "Who directed 'Jurassic Park' (1993)?",
+    "choices": ["James Cameron", "Steven Spielberg", "George Lucas", "Ridley Scott"],
+    "correctIndex": 1,
+    "explanation": "Steven Spielberg directed Jurassic Park, released in 1993."
+  },
+  {
+    "id": "q-051",
+    "category": "Science",
+    "prompt": "What is the atomic number of carbon?",
+    "choices": ["4", "6", "8", "12"],
+    "correctIndex": 1,
+    "explanation": "Carbon has atomic number 6, meaning it has 6 protons in its nucleus."
+  },
+  {
+    "id": "q-052",
+    "category": "Geography",
+    "prompt": "Which river flows through Egypt?",
+    "choices": ["Congo", "Niger", "Nile", "Zambezi"],
+    "correctIndex": 2,
+    "explanation": "The Nile flows northward through Egypt before emptying into the Mediterranean."
+  },
+  {
+    "id": "q-053",
+    "category": "Literature",
+    "prompt": "Who wrote 'To Kill a Mockingbird'?",
+    "choices": ["Truman Capote", "John Steinbeck", "Harper Lee", "William Faulkner"],
+    "correctIndex": 2,
+    "explanation": "Harper Lee published To Kill a Mockingbird in 1960; it won the Pulitzer Prize."
+  },
+  {
+    "id": "q-054",
+    "category": "Art",
+    "prompt": "Which Dutch painter is known for 'The Starry Night'?",
+    "choices": ["Rembrandt", "Johannes Vermeer", "Piet Mondrian", "Vincent van Gogh"],
+    "correctIndex": 3,
+    "explanation": "Vincent van Gogh painted The Starry Night in June 1889 while in an asylum."
+  },
+  {
+    "id": "q-055",
+    "category": "Technology",
+    "prompt": "What does 'GPS' stand for?",
+    "choices": ["General Positioning System", "Global Positioning System", "Geographic Positioning Satellite", "Ground Proximity Sensor"],
+    "correctIndex": 1,
+    "explanation": "GPS stands for Global Positioning System, a satellite-based navigation system."
+  },
+  {
+    "id": "q-056",
+    "category": "Sports",
+    "prompt": "How many points is a touchdown worth in American football?",
+    "choices": ["3", "5", "6", "7"],
+    "correctIndex": 2,
+    "explanation": "A touchdown scores 6 points; teams can then attempt a 1 or 2-point conversion."
+  },
+  {
+    "id": "q-057",
+    "category": "Science",
+    "prompt": "What is the densest planet in our solar system?",
+    "choices": ["Jupiter", "Earth", "Mercury", "Neptune"],
+    "correctIndex": 1,
+    "explanation": "Earth is the densest planet at about 5,513 kg/m³."
+  },
+  {
+    "id": "q-058",
+    "category": "History",
+    "prompt": "Which ancient civilization built the Machu Picchu citadel?",
+    "choices": ["Aztec", "Maya", "Inca", "Olmec"],
+    "correctIndex": 2,
+    "explanation": "The Inca built Machu Picchu in the 15th century in present-day Peru."
+  },
+  {
+    "id": "q-059",
+    "category": "Math",
+    "prompt": "What is 2 to the power of 10?",
+    "choices": ["512", "1024", "2048", "256"],
+    "correctIndex": 1,
+    "explanation": "2^10 = 1024."
+  },
+  {
+    "id": "q-060",
+    "category": "Music",
+    "prompt": "Which composer wrote the 'Moonlight Sonata'?",
+    "choices": ["Mozart", "Bach", "Chopin", "Beethoven"],
+    "correctIndex": 3,
+    "explanation": "Ludwig van Beethoven composed the Moonlight Sonata in 1801."
+  },
+  {
+    "id": "q-061",
+    "category": "Movies",
+    "prompt": "What is the highest-grossing film of all time (as of 2024)?",
+    "choices": ["Avengers: Endgame", "Titanic", "Avatar", "The Lion King"],
+    "correctIndex": 2,
+    "explanation": "Avatar (2009, re-released 2022) holds the record with over $2.9 billion worldwide."
+  },
+  {
+    "id": "q-062",
+    "category": "Geography",
+    "prompt": "In which country would you find the Amazon Rainforest mostly located?",
+    "choices": ["Colombia", "Peru", "Venezuela", "Brazil"],
+    "correctIndex": 3,
+    "explanation": "About 60% of the Amazon Rainforest lies within Brazil."
+  },
+  {
+    "id": "q-063",
+    "category": "Science",
+    "prompt": "What element has the symbol 'Fe'?",
+    "choices": ["Fluorine", "Iron", "Francium", "Fermium"],
+    "correctIndex": 1,
+    "explanation": "Fe comes from 'ferrum', the Latin word for iron."
+  },
+  {
+    "id": "q-064",
+    "category": "Literature",
+    "prompt": "Who wrote 'The Great Gatsby'?",
+    "choices": ["Ernest Hemingway", "John Dos Passos", "F. Scott Fitzgerald", "Sinclair Lewis"],
+    "correctIndex": 2,
+    "explanation": "F. Scott Fitzgerald published The Great Gatsby in 1925."
+  },
+  {
+    "id": "q-065",
+    "category": "Technology",
+    "prompt": "Which company developed the Android operating system?",
+    "choices": ["Apple", "Microsoft", "Google", "Samsung"],
+    "correctIndex": 2,
+    "explanation": "Android was developed by Android Inc., acquired by Google in 2005."
+  },
+  {
+    "id": "q-066",
+    "category": "Sports",
+    "prompt": "How many Grand Slam tennis tournaments are there per year?",
+    "choices": ["2", "3", "4", "5"],
+    "correctIndex": 2,
+    "explanation": "The four Grand Slams are the Australian Open, French Open, Wimbledon, and US Open."
+  },
+  {
+    "id": "q-067",
+    "category": "History",
+    "prompt": "What was the name of the first artificial Earth satellite?",
+    "choices": ["Explorer 1", "Vostok 1", "Sputnik 1", "Luna 1"],
+    "correctIndex": 2,
+    "explanation": "Sputnik 1 was launched by the Soviet Union on October 4, 1957."
+  },
+  {
+    "id": "q-068",
+    "category": "Art",
+    "prompt": "In which museum is the Mona Lisa displayed?",
+    "choices": ["Uffizi Gallery", "The Prado", "The Louvre", "The Met"],
+    "correctIndex": 2,
+    "explanation": "The Mona Lisa has been on permanent display at the Louvre in Paris since 1797."
+  },
+  {
+    "id": "q-069",
+    "category": "Math",
+    "prompt": "What is the next prime number after 13?",
+    "choices": ["15", "16", "17", "19"],
+    "correctIndex": 2,
+    "explanation": "17 is prime (divisible only by 1 and itself); 15 = 3×5, 16 = 2^4."
+  },
+  {
+    "id": "q-070",
+    "category": "Science",
+    "prompt": "What is the most common blood type in humans?",
+    "choices": ["A+", "B+", "AB+", "O+"],
+    "correctIndex": 3,
+    "explanation": "O+ (O positive) is the most common blood type, found in about 38% of people."
+  },
+  {
+    "id": "q-071",
+    "category": "Geography",
+    "prompt": "Which country has the longest coastline in the world?",
+    "choices": ["Norway", "Russia", "Australia", "Canada"],
+    "correctIndex": 3,
+    "explanation": "Canada has the longest coastline at approximately 202,080 km."
+  },
+  {
+    "id": "q-072",
+    "category": "Music",
+    "prompt": "What is the term for the speed or pace of a musical piece?",
+    "choices": ["Timbre", "Rhythm", "Tempo", "Melody"],
+    "correctIndex": 2,
+    "explanation": "Tempo refers to the speed of a musical piece, measured in beats per minute (BPM)."
+  },
+  {
+    "id": "q-073",
+    "category": "Movies",
+    "prompt": "Which actor played Iron Man in the Marvel Cinematic Universe?",
+    "choices": ["Chris Evans", "Chris Hemsworth", "Robert Downey Jr.", "Mark Ruffalo"],
+    "correctIndex": 2,
+    "explanation": "Robert Downey Jr. portrayed Tony Stark / Iron Man from 2008 to 2019."
+  },
+  {
+    "id": "q-074",
+    "category": "History",
+    "prompt": "Which year did Christopher Columbus first reach the Americas?",
+    "choices": ["1488", "1490", "1492", "1498"],
+    "correctIndex": 2,
+    "explanation": "Columbus landed in the Bahamas on October 12, 1492."
+  },
+  {
+    "id": "q-075",
+    "category": "Science",
+    "prompt": "How many chambers does the human heart have?",
+    "choices": ["2", "3", "4", "5"],
+    "correctIndex": 2,
+    "explanation": "The human heart has 4 chambers: two atria and two ventricles."
+  },
+  {
+    "id": "q-076",
+    "category": "Technology",
+    "prompt": "What does 'RAM' stand for in computing?",
+    "choices": ["Read Access Memory", "Random Access Memory", "Rapid Application Module", "Remote Asset Manager"],
+    "correctIndex": 1,
+    "explanation": "RAM stands for Random Access Memory — the short-term memory of a computer."
+  },
+  {
+    "id": "q-077",
+    "category": "Literature",
+    "prompt": "In Greek mythology, who is the god of the sea?",
+    "choices": ["Zeus", "Ares", "Hades", "Poseidon"],
+    "correctIndex": 3,
+    "explanation": "Poseidon is the Greek god of the sea, earthquakes, and horses."
+  },
+  {
+    "id": "q-078",
+    "category": "Sports",
+    "prompt": "What country won the 2022 FIFA World Cup?",
+    "choices": ["Brazil", "France", "Argentina", "Croatia"],
+    "correctIndex": 2,
+    "explanation": "Argentina defeated France on penalties in the 2022 World Cup final in Qatar."
+  },
+  {
+    "id": "q-079",
+    "category": "Math",
+    "prompt": "What is the area of a circle with radius 5? (use π ≈ 3.14)",
+    "choices": ["31.4", "62.8", "78.5", "94.2"],
+    "correctIndex": 2,
+    "explanation": "Area = π × r² = 3.14 × 25 = 78.5"
+  },
+  {
+    "id": "q-080",
+    "category": "Geography",
+    "prompt": "What is the tallest mountain in the world?",
+    "choices": ["K2", "Kangchenjunga", "Mount Everest", "Lhotse"],
+    "correctIndex": 2,
+    "explanation": "Mount Everest stands at 8,848.86 m above sea level, the tallest in the world."
+  },
+  {
+    "id": "q-081",
+    "category": "Science",
+    "prompt": "What planet is closest to the Sun?",
+    "choices": ["Venus", "Earth", "Mercury", "Mars"],
+    "correctIndex": 2,
+    "explanation": "Mercury is the closest planet to the Sun, orbiting at an average distance of 57.9 million km."
+  },
+  {
+    "id": "q-082",
+    "category": "Art",
+    "prompt": "What art movement is Salvador Dalí associated with?",
+    "choices": ["Cubism", "Impressionism", "Surrealism", "Expressionism"],
+    "correctIndex": 2,
+    "explanation": "Salvador Dalí was a leading figure of the Surrealist movement."
+  },
+  {
+    "id": "q-083",
+    "category": "History",
+    "prompt": "Which ancient wonder is still standing today?",
+    "choices": ["Hanging Gardens of Babylon", "Colossus of Rhodes", "Great Pyramid of Giza", "Statue of Zeus"],
+    "correctIndex": 2,
+    "explanation": "The Great Pyramid of Giza is the only ancient wonder still largely intact."
+  },
+  {
+    "id": "q-084",
+    "category": "Technology",
+    "prompt": "Who co-founded Apple Inc. alongside Steve Jobs?",
+    "choices": ["Bill Gates", "Steve Wozniak", "Paul Allen", "Michael Dell"],
+    "correctIndex": 1,
+    "explanation": "Steve Wozniak co-founded Apple with Steve Jobs and Ronald Wayne in 1976."
+  },
+  {
+    "id": "q-085",
+    "category": "Music",
+    "prompt": "Which instrument has 88 keys?",
+    "choices": ["Organ", "Harpsichord", "Piano", "Accordion"],
+    "correctIndex": 2,
+    "explanation": "A standard piano has 88 keys — 52 white and 36 black."
+  },
+  {
+    "id": "q-086",
+    "category": "Movies",
+    "prompt": "Who voiced Woody in the Toy Story franchise?",
+    "choices": ["Billy Crystal", "Tom Hanks", "Bill Murray", "Robin Williams"],
+    "correctIndex": 1,
+    "explanation": "Tom Hanks has voiced Woody since the first Toy Story film in 1995."
+  },
+  {
+    "id": "q-087",
+    "category": "Science",
+    "prompt": "What is the chemical symbol for sodium?",
+    "choices": ["So", "Sd", "Na", "Sm"],
+    "correctIndex": 2,
+    "explanation": "Na comes from 'Natrium', the Latin/German word for sodium."
+  },
+  {
+    "id": "q-088",
+    "category": "Sports",
+    "prompt": "In which sport is a 'birdie' a score of one under par?",
+    "choices": ["Tennis", "Badminton", "Golf", "Cricket"],
+    "correctIndex": 2,
+    "explanation": "In golf, a birdie is completing a hole in one stroke fewer than par."
+  },
+  {
+    "id": "q-089",
+    "category": "Geography",
+    "prompt": "What is the capital of Brazil?",
+    "choices": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"],
+    "correctIndex": 2,
+    "explanation": "Brasília has been Brazil's capital since 1960, replacing Rio de Janeiro."
+  },
+  {
+    "id": "q-090",
+    "category": "Math",
+    "prompt": "What is the result of 1000 ÷ 8?",
+    "choices": ["105", "115", "125", "135"],
+    "correctIndex": 2,
+    "explanation": "1000 ÷ 8 = 125."
+  },
+  {
+    "id": "q-091",
+    "category": "Literature",
+    "prompt": "What is the name of the whale in 'Moby-Dick'?",
+    "choices": ["Moby", "Dick", "Moby Dick", "The White Whale"],
+    "correctIndex": 2,
+    "explanation": "The white sperm whale is called Moby Dick in Herman Melville's 1851 novel."
+  },
+  {
+    "id": "q-092",
+    "category": "History",
+    "prompt": "Which country was the first to grant women the right to vote nationally?",
+    "choices": ["USA", "UK", "New Zealand", "Australia"],
+    "correctIndex": 2,
+    "explanation": "New Zealand became the first self-governing country to grant women the vote in 1893."
+  },
+  {
+    "id": "q-093",
+    "category": "Science",
+    "prompt": "What layer of the Earth do we live on?",
+    "choices": ["Mantle", "Outer core", "Inner core", "Crust"],
+    "correctIndex": 3,
+    "explanation": "The crust is the outermost solid layer of the Earth where all life exists."
+  },
+  {
+    "id": "q-094",
+    "category": "Art",
+    "prompt": "Which Spanish architect designed the Sagrada Família?",
+    "choices": ["Rafael Moneo", "Santiago Calatrava", "Antoni Gaudí", "Álvaro Siza"],
+    "correctIndex": 2,
+    "explanation": "Antoni Gaudí began work on the Sagrada Família in 1883; it remains unfinished."
+  },
+  {
+    "id": "q-095",
+    "category": "Technology",
+    "prompt": "What is the binary representation of the decimal number 10?",
+    "choices": ["0110", "1001", "1010", "1100"],
+    "correctIndex": 2,
+    "explanation": "10 in binary is 1010 (8 + 2 = 10)."
+  },
+  {
+    "id": "q-096",
+    "category": "Movies",
+    "prompt": "In 'The Silence of the Lambs', what is Hannibal Lecter's profession?",
+    "choices": ["Lawyer", "Surgeon", "Psychiatrist", "Detective"],
+    "correctIndex": 2,
+    "explanation": "Dr. Hannibal Lecter is a brilliant psychiatrist and cannibalistic serial killer."
+  },
+  {
+    "id": "q-097",
+    "category": "Geography",
+    "prompt": "Through how many countries does the River Amazon flow?",
+    "choices": ["2", "3", "4", "5"],
+    "correctIndex": 1,
+    "explanation": "The Amazon flows through Peru, Colombia, and primarily Brazil — 3 countries."
+  },
+  {
+    "id": "q-098",
+    "category": "Music",
+    "prompt": "What nationality was Frédéric Chopin?",
+    "choices": ["Austrian", "German", "Polish", "Hungarian"],
+    "correctIndex": 2,
+    "explanation": "Frédéric Chopin was born in Poland in 1810, though he spent much of his life in France."
+  },
+  {
+    "id": "q-099",
+    "category": "Sports",
+    "prompt": "How long is a standard marathon race?",
+    "choices": ["26.2 miles", "24.0 miles", "25.5 miles", "27.0 miles"],
+    "correctIndex": 0,
+    "explanation": "A marathon is exactly 26.2 miles (42.195 km)."
+  },
+  {
+    "id": "q-100",
+    "category": "Science",
+    "prompt": "What is the process by which plants convert sunlight into food?",
+    "choices": ["Respiration", "Transpiration", "Photosynthesis", "Fermentation"],
+    "correctIndex": 2,
+    "explanation": "Photosynthesis converts sunlight, CO2, and water into glucose and oxygen."
+  }
+]

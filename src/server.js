@@ -10,10 +10,9 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, '../public')))
 
 // Routes
-app.use('/api/players', require('./routes/players'))
-app.use('/api/matches', require('./routes/matches'))
-app.use('/api/leaderboard', require('./routes/leaderboard'))
-app.use('/api/seasons', require('./routes/seasons'))
+app.use('/api/questions', require('./routes/questions'))
+app.use('/api/games', require('./routes/games'))
+app.use('/api/scores', require('./routes/scores'))
 
 // Health check
 app.get('/api/health', (req, res) => {
@@ -27,7 +26,7 @@ app.use(errorHandler)
 // Start server
 if (require.main === module) {
   app.listen(settings.port, () => {
-    console.log(`Game Leaderboard API running on http://localhost:${settings.port}`)
+    console.log(`Quiz Arena running on http://localhost:${settings.port}`)
   })
 }
 

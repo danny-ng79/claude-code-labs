@@ -2,10 +2,8 @@ function errorHandler(err, req, res, next) {
   console.error(`[ERROR] ${err.message}`)
   console.error(err.stack)
 
-  // BUG: leaks stack trace to client in production
   res.status(err.status || 500).json({
-    error: err.message || 'Internal server error',
-    stack: err.stack
+    error: err.message || 'Internal server error'
   })
 }
 

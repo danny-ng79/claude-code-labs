@@ -30,9 +30,8 @@ function findById(collection, id) {
   return collection.find((item) => item.id === id)
 }
 
-// BUG: uses == instead of === for comparison
 function findByField(collection, field, value) {
-  return collection.find((item) => item[field] == value)
+  return collection.find((item) => item[field] === value)
 }
 
 module.exports = { loadCollection, saveCollection, findById, findByField }

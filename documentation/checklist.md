@@ -1,85 +1,39 @@
-# Quiz Arena
+# Quiz Arena — Homework Checklist
 
-A timed trivia game with streak-based scoring and a persistent leaderboard. Built with Express + vanilla JS.
-
-## Setup
-
-```bash
-npm install
-npm start
-open http://localhost:3000
-```
-
-## Features
-
-- 10-question timed quiz (15 seconds per question)
-- Server-authoritative scoring — the client never sees correct answers
-- Streak bonus multipliers (2x at 3 streak, 3x at 5 streak)
-- Progress bar showing quiz completion
-- Persistent top-10 leaderboard
-- Keyboard navigation (1-4 keys to answer)
-- Correct/wrong color flash feedback
-- Responsive design (375px–1280px)
-
-## Development
-
-```bash
-npm run dev       # Auto-reload on changes
-npm test          # Run tests
-npm run lint      # ESLint
-npm run format    # Prettier
-```
-
-## Architecture
-
-```
-src/
-├── server.js              # Express app entry
-├── routes/                # API route handlers
-│   ├── questions.js
-│   ├── games.js
-│   └── scores.js
-├── models/                # Data models
-│   ├── question.js
-│   ├── game.js
-│   └── score.js
-├── services/              # Business logic
-│   ├── store.js           # JSON file storage
-│   ├── quiz.js            # Game logic + scoring
-│   └── leaderboard.js     # Top scores
-└── middleware/
-    ├── validate.js        # Input validation
-    └── errorHandler.js    # Error handling
-```
+Based on [labs/homework-quiz-arena.md](labs/homework-quiz-arena.md).
 
 ---
 
-## Homework Checklist
-
-### Core Requirements
+## Core Requirements
 
 - [x] **Quiz flow** — one question at a time, 4 answer buttons, advances on click or timeout
 - [x] **Scoring** — server-authoritative points per question, running total shown during play
 - [x] **Timer** — 15-second countdown per question (number + depleting bar), auto-skips on expiry
 - [x] **Results screen** — final score, correct count, accuracy %, time taken, best streak
 
-### Gamification (≥2 required — 3 implemented)
+---
+
+## Gamification (≥2 required — 3 implemented)
 
 - [x] **Streak bonus** — 2× points after 3 correct in a row, 3× after 5; badge animates on screen
-- [x] **Leaderboard** — persistent top-10 saved server-side; shown on start screen and after each game; current player's row highlighted in green
+- [x] **Leaderboard** — persistent top-10 saved server-side (not localStorage); shown on start screen and after each game; current player's row highlighted in green
 - [ ] **Difficulty levels** — easy (20s) / medium (15s) / hard (10s) — *not implemented*
 - [x] **Progress bar** — fills as questions are answered, shown above each question
 - [x] **Animations** — correct answer flashes green, wrong flashes red (300ms CSS transition)
 - [ ] **Sound effects** — Web Audio API — *not implemented*
 
-### Bonus / Optional
+---
+
+## Bonus / Optional
 
 - [x] **10+ questions** — 100 questions across 10 categories
 - [x] **Categories** — Science, History, Geography, Literature, Math, Technology, Music, Sports, Movies, Art
 - [ ] **Multiplayer** — two players on same screen — *not implemented*
 - [x] **Custom theme** — dark UI (#0f0f1a background, amber accent #f5a623)
 
-### Grading Rubric
+---
+
+## Grading Rubric
 
 | Criteria | Points | Status |
 |---|---|---|
@@ -92,7 +46,9 @@ src/
 | Creativity bonus | 5 | ✅ keyboard nav, multiplier badge, 100 questions |
 | **Total** | **100** | **✅ Full marks** |
 
-### Extra Features (beyond rubric)
+---
+
+## Extra Features (beyond rubric)
 
 - [x] Keyboard navigation — press 1–4 to answer
 - [x] Multiplier badge animation (x2! / x3!) when streak bonus activates
@@ -104,9 +60,3 @@ src/
 - [x] Server-side locked flag prevents double-submit race condition
 - [x] Corrupt leaderboard file recovers gracefully (returns empty instead of crashing)
 - [x] Questions shuffled randomly each game from a pool of 100
-
----
-
-## Retro
-
-<!-- TODO: Write 2-3 sentences about what was easy and hard about directing Claude Code -->
